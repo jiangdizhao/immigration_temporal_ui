@@ -5,6 +5,7 @@ export const lawyers = [
   { name: 'Julian Chen', role: '移民法与行政复审律师', credential: 'NSW Legal Practising No. 48291', focus: '拒签、ART、雇主担保', initials: 'JC', accent: 'navy' },
   { name: 'Eleanor Vance', role: '商业投资与家庭移民律师', credential: 'MARA Registered 2310048', focus: '商业创新、伴侣、父母', initials: 'EV', accent: 'gold' },
   { name: 'Marcus Zheng', role: '学生签证与过渡签证律师', credential: 'MARA Registered 1908842', focus: '留学、500、485、189', initials: 'MZ', accent: 'blue' },
+  { name: 'Grace Zhao', role: '家庭团聚与父母移民律师', credential: 'MARA Registered 2204718', focus: '伴侣、父母、家庭团聚', initials: 'GZ', accent: 'purple' },
 ]
 
 export const services = [

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:review": "npm run build && node scripts/build-review.mjs",
     "lint": "tsc --noEmit"
   },
   "dependencies": {

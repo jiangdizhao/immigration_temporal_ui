@@ -18,6 +18,14 @@ npm run build
 npm run lint
 ```
 
+Offline lawyer-review artifact:
+
+```bash
+npm run build:review
+```
+
+This creates `review/OPEN_ME_Sovereign_Nexus_UI.html` and `review/Sovereign_Nexus_UI_Review.zip`. The HTML bundles the JavaScript and CSS and uses hash navigation, so it can be opened by double-clicking from `file://` without Node, npm, a local server, or an internet connection.
+
 ## Route map
 
 - `#/` — premium public home page
