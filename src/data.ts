@@ -20,10 +20,10 @@ export type Matter = {
 }
 
 export const lawyers = [
-  { name: 'Marcus Zheng', role: '学生签证与过渡签证律师', credential: 'MARA Registered 1908842', focus: '500、485、189 与学生签证拒签', initials: 'MZ', accent: 'blue', asset: 'marcus' },
-  { name: 'Eleanor Vance', role: '商业投资与家庭移民律师', credential: 'MARA Registered 2310048', focus: '商业创新、伴侣、父母移民', initials: 'EV', accent: 'gold', asset: 'eleanor' },
-  { name: 'Julian Chen', role: '移民法与行政复审律师', credential: 'NSW Legal Practising No. 48291', focus: '拒签、ART、雇主担保', initials: 'JC', accent: 'navy', asset: 'julian' },
-  { name: 'Grace Zhao', role: '家庭团聚与父母移民律师', credential: 'MARA Registered 2204718', focus: '伴侣、父母、家庭团聚', initials: 'GZ', accent: 'purple', asset: 'grace' },
+  { name: 'Marcus Zheng', role: 'Senior Migration Lawyer · Litigation & ART', credential: 'MARA Registered 1908842', focus: '500、485、189 与学生签证拒签', experience: '12+ years · NSW / Federal review', specialties: ['Student visa', 'ART review', 'Judicial review'], bio: '专注复杂拒签、解释信与行政复审策略，把紧急时间线拆成可执行的证据任务。', initials: 'MZ', accent: 'blue', asset: 'marcus' },
+  { name: 'Eleanor Vance', role: 'Partner · Business & Investment Migration', credential: 'MARA Registered 2310048', focus: '商业创新、伴侣、父母移民', experience: '15+ years · business and family', specialties: ['188 / 888', 'Funds compliance', 'Family migration'], bio: '服务企业家、高净值家庭与跨境家庭，重视资金来源、治理结构与长期身份安排。', initials: 'EV', accent: 'gold', asset: 'eleanor' },
+  { name: 'Julian Chen', role: 'Migration Lawyer · Employer Sponsorship', credential: 'NSW Legal Practising No. 48291', focus: '拒签、ART、雇主担保', experience: '10+ years · employer pathways', specialties: ['482 / 186', 'Employer compliance', 'ART review'], bio: '围绕雇主担保、职位真实度与合规薪酬建立证据链，处理需要法律判断的关键节点。', initials: 'JC', accent: 'navy', asset: 'julian' },
+  { name: 'Grace Zhao', role: 'Family Migration Lawyer · Education Pathways', credential: 'MARA Registered 2204718', focus: '伴侣、父母、家庭团聚', experience: '9+ years · family and student matters', specialties: ['820 / 801', 'Parent visas', 'GS defence'], bio: '以双语沟通和关系证据为核心，帮助跨国家庭把材料、叙事和申请节奏放在同一案件里。', initials: 'GZ', accent: 'purple', asset: 'grace' },
 ]
 
 export const services = [
@@ -36,14 +36,14 @@ export const services = [
 ]
 
 export const policyUpdates = [
-  { id: 'tsmit-2607', title: '澳洲临时技术移民最低收入门槛调整：法定基准上调至 $75,930', category: '雇主担保', source: 'Federal Register of Legislation', date: '2026.07.01', status: 'enacted' as PolicyStatus, summary: '围绕 Subclass 482、494 与 186 通道的最低收入门槛与既有申请过渡处理。', code: 'LIN 26/084', affected: '雇主担保、技术移民申请人' },
-  { id: 'surcharge-duty', title: '新州海外购房附加税（Surcharge Duty）代理声明要求更新', category: '州税务', source: 'Revenue NSW', date: '2026.06.20', status: 'enacted' as PolicyStatus, summary: '对信托与代理结构中的受益人声明、审查与补救节点进行提示。', code: 'NSW-REV-26', affected: '海外买家、信托与代理结构' },
-  { id: 'art-fast-track', title: '联邦行政复审申请（ART）正式运作：学生与访客签证进入新的分流路径', category: '行政复审', source: 'Administrative Review Tribunal', date: '2026.05.18', status: 'enacted' as PolicyStatus, summary: '展示审理分流与材料准备节点，具体适用范围以官方来源为准。', code: 'ART-2026-04', affected: '签证拒签、行政复审申请人' },
-  { id: 'visa-processing', title: '462 打工度假签证电子抽签通道正式上线', category: '签证流程', source: 'Department of Home Affairs', date: '2026.04.30', status: 'enacted' as PolicyStatus, summary: '针对抽签、邀请、材料提交与身份时间线的演示性情报条目。', code: 'WHM-462-26', affected: '462 打工度假签证申请人' },
-  { id: 'skills-reform', title: '技能紧缺签证（Skills in Demand）三级通道法定改革方案', category: '签证改革', source: 'Department of Home Affairs', date: '拟议 2026 Q3', status: 'proposed' as PolicyStatus, summary: '处于审议 / 咨询阶段的结构化提案，尚不代表已生效法律。', code: 'SID-REFORM', affected: '雇主、技术岗位与雇员' },
-  { id: 'aml-reform', title: '反洗钱与反恐融资法第二阶段：地产中介、会计师纳入报告范围', category: '合规监管', source: 'AUSTRAC / Attorney-General', date: '拟议 2026 Q4', status: 'proposed' as PolicyStatus, summary: '面向专业服务行业的合规边界与时间线提示，仍需等待正式文本。', code: 'AML-TR-2', affected: '地产、会计与专业服务机构' },
-  { id: 'vic-nom', title: '维州州担保职业清单与优先行业分配机制咨询稿', category: '州担保', source: 'Live in Melbourne', date: '拟议 2026.10', status: 'proposed' as PolicyStatus, summary: '咨询稿提出对关键行业、区域人才与职业评估排序的更新方向。', code: 'VIC-NOM-26', affected: '维州州担保及技术移民' },
-  { id: 'for-trust', title: '外国投资审查与家庭信托受益人披露规则修订提案', category: '外国投资', source: 'Foreign Investment Review Board', date: '拟议 2026.11', status: 'proposed' as PolicyStatus, summary: '提案关注家庭信托、受益人披露和海外控制权判断，未构成现行义务。', code: 'FIRB-TRUST', affected: '家庭信托、海外投资人与顾问' },
+  { id: 'tsmit-2607', title: '澳洲临时技术移民最低收入门槛调整：法定基准上调至 $75,930', category: '雇主担保', source: 'Federal Register of Legislation', date: '2026.07.01', status: 'enacted' as PolicyStatus, summary: '围绕 Subclass 482、494 与 186 通道的最低收入门槛与既有申请过渡处理。', code: 'LIN 26/084', affected: '雇主担保、技术移民申请人', implication: '新递交提名需按新基准核对底薪与 AMSR。' },
+  { id: 'surcharge-duty', title: '新州海外购房附加税（Surcharge Duty）代理声明要求更新', category: '州税务', source: 'Revenue NSW', date: '2026.06.20', status: 'enacted' as PolicyStatus, summary: '对信托与代理结构中的受益人声明、审查与补救节点进行提示。', code: 'NSW-REV-26', affected: '海外买家、信托与代理结构', implication: '签署代理文件前需核对受益人排除条款。' },
+  { id: 'art-fast-track', title: '联邦行政复审申请（ART）正式运作：学生与访客签证进入新的分流路径', category: '行政复审', source: 'Administrative Review Tribunal', date: '2026.05.18', status: 'enacted' as PolicyStatus, summary: '展示审理分流与材料准备节点，具体适用范围以官方来源为准。', code: 'ART-2026-04', affected: '签证拒签、行政复审申请人', implication: '优先确认 review rights 与决定书上的期限。' },
+  { id: 'visa-processing', title: '462 打工度假签证电子抽签通道正式上线', category: '签证流程', source: 'Department of Home Affairs', date: '2026.04.30', status: 'enacted' as PolicyStatus, summary: '针对抽签、邀请、材料提交与身份时间线的演示性情报条目。', code: 'WHM-462-26', affected: '462 打工度假签证申请人', implication: '抽签、邀请与材料提交需要分开管理时间线。' },
+  { id: 'skills-reform', title: '技能紧缺签证（Skills in Demand）三级通道法定改革方案', category: '签证改革', source: 'Department of Home Affairs', date: '拟议 2026 Q3', status: 'proposed' as PolicyStatus, summary: '处于审议 / 咨询阶段的结构化提案，尚不代表已生效法律。', code: 'SID-REFORM', affected: '雇主、技术岗位与雇员', implication: '提案阶段应保留现行路径的备选方案。' },
+  { id: 'aml-reform', title: '反洗钱与反恐融资法第二阶段：地产中介、会计师纳入报告范围', category: '合规监管', source: 'AUSTRAC / Attorney-General', date: '拟议 2026 Q4', status: 'proposed' as PolicyStatus, summary: '面向专业服务行业的合规边界与时间线提示，仍需等待正式文本。', code: 'AML-TR-2', affected: '地产、会计与专业服务机构', implication: '关注咨询期、正式法案与过渡规则之间的差异。' },
+  { id: 'vic-nom', title: '维州州担保职业清单与优先行业分配机制咨询稿', category: '州担保', source: 'Live in Melbourne', date: '拟议 2026.10', status: 'proposed' as PolicyStatus, summary: '咨询稿提出对关键行业、区域人才与职业评估排序的更新方向。', code: 'VIC-NOM-26', affected: '维州州担保及技术移民', implication: '职业评估与州担保排序仍需等待最终清单。' },
+  { id: 'for-trust', title: '外国投资审查与家庭信托受益人披露规则修订提案', category: '外国投资', source: 'Foreign Investment Review Board', date: '拟议 2026.11', status: 'proposed' as PolicyStatus, summary: '提案关注家庭信托、受益人披露和海外控制权判断，未构成现行义务。', code: 'FIRB-TRUST', affected: '家庭信托、海外投资人与顾问', implication: '暂以现行受益人披露规则进行风险预审。' },
 ]
 
 export const policies = policyUpdates
