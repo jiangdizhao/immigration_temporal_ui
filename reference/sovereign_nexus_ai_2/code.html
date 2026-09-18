@@ -1,0 +1,517 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#4e6874","on-tertiary-fixed-variant":"#5400cc","on-surface-variant":"#43474f","tertiary-container":"#350086","on-background":"#191c1d","inverse-primary":"#a9c7ff","surface-container-lowest":"#ffffff","surface-variant":"#e1e3e4","outline-variant":"#c4c6d0","tertiary-fixed-dim":"#cfbcff","tertiary-fixed":"#e9ddff","on-primary":"#ffffff","on-primary-fixed-variant":"#264778","tertiary":"#1d0052","on-secondary-fixed-variant":"#304a55","background":"#f8f9fa","primary-container":"#002b5b","inverse-on-surface":"#f0f1f2","on-tertiary":"#ffffff","on-primary-container":"#7594ca","primary-fixed":"#d6e3ff","secondary-container":"#cbe7f5","on-surface":"#191c1d","surface":"#f8f9fa","surface-tint":"#405f91","error":"#ba1a1a","on-error-container":"#93000a","surface-container-highest":"#e1e3e4","on-tertiary-fixed":"#22005d","secondary":"#48626e","on-tertiary-container":"#a07cff","on-secondary":"#ffffff","outline":"#747780","surface-dim":"#d9dadb","surface-container":"#edeeef","on-secondary-fixed":"#021f29","on-error":"#ffffff","secondary-fixed-dim":"#afcbd8","surface-container-high":"#e7e8e9","surface-bright":"#f8f9fa","primary-fixed-dim":"#a9c7ff","surface-container-low":"#f3f4f5","primary":"#001736","secondary-fixed":"#cbe7f5","error-container":"#ffdad6","on-primary-fixed":"#001b3d","inverse-surface":"#2e3132"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{},"fontFamily":{"headline":["Manrope"],"display":["Manrope"],"body":["Inter","Noto Sans SC"],"label":["Inter","Noto Sans SC"]},"fontSize":{}}}}</script></head><body class="bg-surface font-body text-on-surface antialiased"><div class=""><header class="fixed top-0 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8 left-0"><div class="flex items-center gap-3"><span class="text-xs font-label uppercase tracking-widest text-secondary font-semibold">BARANGAROO SYDNEY CLOUD TERMINAL</span></div><div class="flex items-center gap-5"><button class="text-xs font-label font-medium text-on-surface-variant hover:text-on-surface transition-colors px-2 py-1" type="button">中文 <span class="text-outline-variant mx-1">|</span> EN</button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XR_oq23I-HGFF3eDfBQDZ6sX165DJ250cTnWfjdwFv29ixjusY6F4ANC3LRbUyfVXoFm7TXi7KRBQLtv6uI4qIAukK2eb7ibeAGna6mLC9eBmjNp8mmnfw3doxwwOpcr43uNRLcz0-jI8nFjSA95K7GFEvMs0V5S8esuhBZG7tZ2oTiHJGuKUfLuBCC-eUeai-dRoKbey6PRhPkAJI_NDoF7T_bGbTMM6oEmsr1TaZyC8RASFX_acaD9vm_VUz3sLrLceG_qBpH74"></div></header><main class="w-full pt-16 bg-surface min-h-screen px-8 py-8"><div class="flex flex-col w-full">
+<!-- Breadcrumb & Top Utility -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<nav class="flex items-center gap-2 text-xs font-label">
+<a class="flex items-center gap-1.5 text-secondary hover:text-primary transition-colors font-medium" href="#">
+<span class="material-symbols-outlined text-base leading-none">arrow_back</span>
+<span class="">返回动态情报库</span>
+</a>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-medium">最新动态</span>
+<span class="text-outline-variant">/</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-mono text-[11px] font-semibold">LEG-TSMIT-2607</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">官方正文与合规备忘录</span>
+</nav>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest shadow-sm text-xs font-label text-secondary">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-medium text-on-surface">内政部公报源已同步校验</span>
+</span>
+<div class="flex items-center rounded-xl bg-surface-container-high p-1 text-xs font-label font-medium">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all" id="lang-dual" type="button">中英双语</button>
+<button class="px-2.5 py-1 rounded-lg text-secondary hover:text-primary transition-all" id="lang-en" type="button">EN Only</button>
+</div>
+</div>
+</div>
+<!-- Hero / Header Card -->
+<section class="relative rounded-2xl bg-surface-container-lowest p-8 md:p-10 shadow-sm mb-8 overflow-hidden">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-gradient-to-br from-primary/5 via-tertiary-container/5 to-transparent blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-6">
+<!-- Meta Badges -->
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="px-3 py-1 rounded-md bg-primary-container text-on-primary-container font-mono text-xs font-semibold tracking-wide">
+          LIN 26/084
+        </span>
+<span class="px-3 py-1 rounded-md bg-surface-container-high text-on-surface-variant font-label text-xs font-medium">
+          Federal Register of Legislation
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-50 text-emerald-800 text-xs font-medium">
+<span class="material-symbols-outlined text-xs">verified</span>
+          法定状态：现行生效并执行中
+        </span>
+<span class="px-3 py-1 rounded-md bg-surface-container-low text-secondary text-xs font-label">
+          管辖：澳洲内政部 (Department of Home Affairs)
+        </span>
+</div>
+<!-- Title Group -->
+<div class="max-w-4xl space-y-3">
+<div class="flex items-baseline gap-3">
+<span class="text-xs font-label font-bold uppercase tracking-widest text-primary/70">IMMIGRATION (LEGAL DISCLOSURE)</span>
+<span class="text-xs font-mono text-outline">EFFECTIVE: 01 JULY 2026</span>
+</div>
+<h1 class="text-2xl md:text-3xl lg:text-4xl font-headline font-extrabold tracking-tight text-primary leading-snug">
+          澳洲临时技术移民最低收入门槛 (TSMIT) 调整正式生效：法定基准上调至 $75,930
+        </h1>
+<p class="text-sm md:text-base text-secondary leading-relaxed font-body">
+          针对 Subclass 482 技能短缺雇主担保、494 偏远地区雇主担保及 Subclass 186 雇主提名永居通道之强制性年薪基准合规审查与存量过渡操作指引。
+        </p>
+</div>
+<!-- Actions Bar & Quick Metrics -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-4 mt-2">
+<div class="flex flex-wrap items-center gap-3">
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-primary to-primary-container text-on-primary text-xs font-label font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all" type="button">
+<span class="material-symbols-outlined text-base">smart_toy</span>
+<span class="">导入 AI Workspace 仿真</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container text-on-surface text-xs font-label font-medium hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-secondary">download_for_offline</span>
+<span class="">下载正式公报 PDF (EN)</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container text-on-surface text-xs font-label font-medium hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-secondary">bookmark_border</span>
+<span class="">收录至法条监管雷达</span>
+</button>
+</div>
+<div class="flex items-center gap-6 text-xs text-secondary font-label">
+<div>
+<span class="block text-[10px] text-outline uppercase font-semibold">前序基准值</span>
+<span class="font-mono text-sm font-bold text-on-surface line-through">$70,000 AUD</span>
+</div>
+<div class="h-6 w-px bg-surface-container-high"></div>
+<div>
+<span class="block text-[10px] text-outline uppercase font-semibold">现行新基准</span>
+<span class="font-mono text-sm font-extrabold text-primary">$75,930 AUD <span class="text-xs font-normal text-emerald-700">(+8.47%)</span></span>
+</div>
+<div class="h-6 w-px bg-surface-container-high"></div>
+<div>
+<span class="block text-[10px] text-outline uppercase font-semibold">通胀锚定算法</span>
+<span class="font-medium text-on-surface">ABS WPI 指数挂钩</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main 70/30 Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT 70% (8 Columns on lg) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- Executive Summary (AI Synthesized) -->
+<section class="rounded-2xl bg-surface-container-lowest p-7 shadow-sm">
+<div class="flex items-center justify-between mb-5">
+<div class="flex items-center gap-2.5">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</span>
+<h2 class="text-base font-headline font-bold text-primary tracking-tight">AI 核心速览 · 三大关键法律推定 (Executive Summary)</h2>
+</div>
+<span class="text-[11px] font-mono text-outline">SYNTHESIZED IN 0.3s</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="rounded-xl bg-surface-container-low p-4 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-xs font-label font-bold text-primary mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="">基准不可低于 $75,930</span>
+</div>
+<p class="text-xs text-secondary leading-relaxed font-body">
+                自 2026 年 7 月 1 日起提交的所有临时技能雇主担保提名（含 482 及 494），年保证收入 (Guaranteed Annual Earnings) 必须至少满足 $75,930 澳币底线。
+              </p>
+</div>
+<div class="mt-3 pt-3 border-t-0 text-[11px] font-mono text-primary font-semibold">
+              MIG REG 1994 // SCHED 2
+            </div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-4 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-xs font-label font-bold text-primary mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="">无追溯效力保护</span>
+</div>
+<p class="text-xs text-secondary leading-relaxed font-body">
+                法案明确适用“不溯及既往原则”：在 2026 年 7 月 1 日以前已递交提名（即使未获批）以及已获批在持签证者，均按递交日之 $70,000 标准执行。
+              </p>
+</div>
+<div class="mt-3 pt-3 text-[11px] font-mono text-emerald-800 font-semibold">
+              SAFE HARBOR PRESERVED
+            </div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-4 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-xs font-label font-bold text-primary mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="">市场薪资 AMSR 联动审查</span>
+</div>
+<p class="text-xs text-secondary leading-relaxed font-body">
+                TSMIT 仅为法定兜底下限。若该职业在同地区之澳洲本地雇员市场薪资（AMSR）高于 $75,930，雇主仍必须按较高之市场薪酬发放，防范工资压低。
+              </p>
+</div>
+<div class="mt-3 pt-3 text-[11px] font-mono text-primary font-semibold">
+              AMSR AUDIT MANDATED
+            </div>
+</div>
+</div>
+</section>
+<!-- Official Statutory Text & Interactive Bilingual Drawer -->
+<section class="rounded-2xl bg-surface-container-lowest p-7 shadow-sm">
+<div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+<div class="flex items-center gap-2.5">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-lg">gavel</span>
+</span>
+<h2 class="text-base font-headline font-bold text-primary tracking-tight">官方完整法律条文 (Official Statutory Text)</h2>
+</div>
+<span class="px-2.5 py-1 rounded-md bg-surface-container font-mono text-[11px] text-secondary">
+            Migration Act 1958 · Section 140G
+          </span>
+</div>
+<!-- Statutory Block 1 -->
+<div class="space-y-6">
+<div class="rounded-xl bg-surface-container-low p-5">
+<div class="flex items-center justify-between mb-3 text-xs">
+<span class="font-mono font-bold text-primary">CLAUSE 2.72(15)(b) — MINIMUM EARNINGS DETERMINATION</span>
+<span class="text-[11px] font-label text-outline uppercase">Instrument: LIN 26/084</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="text-xs leading-relaxed text-on-surface font-body p-3 rounded-lg bg-surface-container-lowest">
+<div class="text-[10px] font-label uppercase font-bold text-secondary mb-1.5">Official English Provision</div>
+                "For the purposes of paragraph 140G(1)(a) of the Act and subregulation 2.72(15), the Temporary Skilled Migration Income Threshold (TSMIT) is determined to be <span class="font-mono font-bold text-primary bg-secondary-container px-1 py-0.5 rounded">$75,930 AUD</span> in respect of any nomination application lodged on or after 1 July 2026."
+              </div>
+<div class="text-xs leading-relaxed text-on-surface font-body p-3 rounded-lg bg-surface-container-lowest">
+<div class="text-[10px] font-label uppercase font-bold text-secondary mb-1.5">权威中文对照译本</div>
+                “就本法案第 140G(1)(a) 条及移民条例第 2.72(15) 款而言，自 <span class="font-bold text-primary bg-secondary-container px-1 py-0.5 rounded">2026 年 7 月 1 日及之后</span> 递交的所有提名申请，其临时技术移民最低收入门槛 (TSMIT) 确定并执行为法定年薪 <span class="font-mono font-bold text-primary bg-secondary-container px-1 py-0.5 rounded">75,930 澳元</span>。”
+              </div>
+</div>
+</div>
+<!-- Statutory Block 2: Explanatory Memorandum -->
+<div class="rounded-xl bg-surface-container-low p-5">
+<div class="flex items-center justify-between mb-3 text-xs">
+<span class="font-mono font-bold text-primary">EXPLANATORY STATEMENT — OPERATION &amp; GRANDFATHERING</span>
+<span class="text-[11px] font-label text-outline uppercase">Legislative Explanatory Note</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="text-xs leading-relaxed text-on-surface font-body p-3 rounded-lg bg-surface-container-lowest">
+<div class="text-[10px] font-label uppercase font-bold text-secondary mb-1.5">Official Legislative Intent</div>
+                "The adjustment is indexed directly in line with the Wage Price Index (WPI) movements as calculated by the Australian Bureau of Statistics. Nominations validly made prior to 1 July 2026 are subject to the legacy threshold of $70,000, preventing prejudicial retrospective operation on pipeline applicants and existing sponsor commitments."
+              </div>
+<div class="text-xs leading-relaxed text-on-surface font-body p-3 rounded-lg bg-surface-container-lowest">
+<div class="text-[10px] font-label uppercase font-bold text-secondary mb-1.5">立法原意与过渡解释</div>
+                “本次上调幅度直接锚定澳大利亚统计局测算的薪资价格指数 (WPI) 波动率。在 2026 年 7 月 1 日前有效完成递交的提名案，将继续适用 $70,000 原旧有基准，以防止对处于通道中的已排队申请人及现有担保人产生不利的溯及性法律效力。”
+              </div>
+</div>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between text-xs text-secondary pt-2">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-outline">info</span>
+<span class="">注：根据 Migration Regulations 1994 Reg 2.57，不含任何非现金福利与超额养老金折算。</span>
+</span>
+<button class="text-primary hover:underline font-medium text-xs" type="button">查看法条历史版本比较 (Diff View) →</button>
+</div>
+</section>
+<!-- Compliance Matrix & Affected Population -->
+<section class="rounded-2xl bg-surface-container-lowest p-7 shadow-sm">
+<div class="flex items-center gap-2.5 mb-6">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-lg">schema</span>
+</span>
+<div>
+<h2 class="text-base font-headline font-bold text-primary tracking-tight">受影响群体与合规边界 (Impact &amp; Compliance Matrix)</h2>
+<p class="text-xs text-secondary">各通道差异化法律准入要求及过渡期处置建议</p>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-xs font-body">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label">
+<th class="py-3 px-4 rounded-l-lg font-semibold">签证类别与业务通道</th>
+<th class="py-3 px-4 font-semibold">最低基准要求</th>
+<th class="py-3 px-4 font-semibold">新政影响生效节点</th>
+<th class="py-3 px-4 rounded-r-lg font-semibold">核心合规防御动作</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 font-medium text-primary">
+<div class="flex flex-col">
+<span class="font-bold">Subclass 482 (TSS 雇主担保)</span>
+<span class="text-[11px] text-secondary">短期通道 / 中长期通道</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono font-bold text-primary">$75,930 AUD/年</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-50 text-amber-800 font-medium text-[11px]">
+                    2026年7月1日及之后递交
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-secondary leading-relaxed">
+                  劳动合同基础底薪必须重签并附带市场薪资调查文件（AMSR），剔除奖金等浮动构成。
+                </td>
+</tr>
+<tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-medium text-primary">
+<div class="flex flex-col">
+<span class="font-bold">Subclass 186 (ENS 雇主提名永居)</span>
+<span class="text-[11px] text-secondary">TRT 过渡通道 / 直接申请通道</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono font-bold text-primary">$75,930 AUD/年</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-50 text-amber-800 font-medium text-[11px]">
+                    2026年7月1日及之后递交
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-secondary leading-relaxed">
+                  核查过去2-3年持续合规纳税记录（STP），确保过往薪资无低于旧门槛的不良合规豁口。
+                </td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 font-medium text-primary">
+<div class="flex flex-col">
+<span class="font-bold">Subclass 494 (偏远地区雇主担保)</span>
+<span class="text-[11px] text-secondary">偏远地区优先配额</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono font-bold text-primary">$75,930 AUD/年</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-amber-50 text-amber-800 font-medium text-[11px]">
+                    2026年7月1日及之后递交
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-secondary leading-relaxed">
+                  偏远地区 RCB (Regional Certifying Body) 评估需提前按新基准发起核验，防范审批周期滞后。
+                </td>
+</tr>
+<tr class="bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4 font-medium text-primary">
+<div class="flex flex-col">
+<span class="font-bold">劳资协议通道 (Labour Agreement / DAMA)</span>
+<span class="text-[11px] text-secondary">含特定特许行业及指定区域特许</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-mono font-medium text-secondary">依协议减免特许 (最高减免10%)</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 font-medium text-[11px]">
+                    受专属双边条款规制
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-secondary leading-relaxed">
+                  可利用现存特许协议中的薪资折扣条款（如最高 10% TSMIT 豁免），基准可折算为 $68,337。
+                </td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Senior Counsel's Practical Advisory -->
+<section class="rounded-2xl bg-surface-container-lowest p-7 shadow-sm">
+<div class="flex items-center justify-between mb-5">
+<div class="flex items-center gap-2.5">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-primary text-on-primary">
+<span class="material-symbols-outlined text-lg">edit_note</span>
+</span>
+<div>
+<h2 class="text-base font-headline font-bold text-primary tracking-tight">执业大律师专案备忘录 (Counsel's Practical Advisory)</h2>
+<p class="text-xs text-secondary">来自悉尼 Barangaroo 商务法务组的实操红线提示</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-mono text-[11px] font-semibold">LEGAL PRIVILEGE</span>
+</div>
+<div class="space-y-4 text-xs font-body leading-relaxed text-on-surface">
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5">report_problem</span>
+<div>
+<h4 class="font-headline font-bold text-primary mb-1">红线警示：严禁虚假薪酬包装（Salary Packaging Manipulation）</h4>
+<p class="text-secondary">
+                根据澳洲联邦移民法与 Fair Work Act，任何雇主企图通过人为调高纸面基本薪资、并在私下要求雇员返还（Kickback Scheme）或强制扣缴不合规管理费的行为，一经发现将被立即吊销担保资质并触发《刑事法典》欺诈指控。移民局合规稽查处 (Immigration Compliance &amp; Integrity Section) 已全面打通税务局 Single Touch Payroll 薪酬自动化核验系统。
+              </p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5">account_tree</span>
+<div>
+<h4 class="font-headline font-bold text-primary mb-1">市场薪酬（AMSR）合理性证据链的巩固策略</h4>
+<p class="text-secondary">
+                若目标岗位在悉尼或墨尔本同行业平均年薪为 $85,000，即便雇主按照法定最低的 $75,930 进行提名合同签署，签证官亦有完全自由裁量权依据 Reg 2.72(10) 以“不符合市场真实薪酬水平”为由拒签。建议企业法律顾问出具至少两份独立薪酬报告（如 Hays Salary Guide / Mercer 调查）佐证申报金额真实性。
+              </p>
+</div>
+</div>
+</div>
+<div class="mt-5 p-4 rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<span class="text-xs text-secondary">本备忘录经 Sovereign Nexus 高级合伙人合规联席签署。法律编号：SN-SYD-2026-ADV-092</span>
+</div>
+<button class="text-xs font-semibold text-primary hover:underline" type="button">
+            索取合规自查清单 (PDF)
+          </button>
+</div>
+</section>
+</div>
+<!-- RIGHT 30% (4 Columns on lg) - STICKY SIDEBAR -->
+<aside class="lg:col-span-4 flex flex-col gap-6 lg:sticky lg:top-24">
+<!-- Card 1: AI Sovereign Jurist Lens -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary-fixed/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-md bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-sm">psychology</span>
+</span>
+<span class="text-xs font-headline font-bold text-primary">AI 法规透镜 (Jurist Lens)</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-fixed font-mono text-[10px] font-bold text-on-primary-fixed">V4.2 AUDIT</span>
+</div>
+<!-- Risk Meter Gauge -->
+<div class="bg-surface-container-low p-3.5 rounded-xl mb-4">
+<div class="flex items-center justify-between text-xs mb-1.5 font-label">
+<span class="text-secondary font-medium">企业用工合规冲击指数</span>
+<span class="text-amber-800 font-bold font-mono">中度偏高 (Moderate)</span>
+</div>
+<div class="w-full h-2 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="w-2/3 bg-amber-500 rounded-full"></div>
+</div>
+<p class="text-[11px] text-outline mt-2 leading-relaxed">
+              餐饮、零售及初级 IT 岗位受提额挤压显著，建议针对存量员工立即展开“年薪基准差异审计”。
+            </p>
+</div>
+<!-- Interactive Ask AI Presets -->
+<div class="space-y-2 mb-5">
+<div class="text-[11px] font-label font-bold text-secondary uppercase tracking-wider">智能速问预设</div>
+<button class="w-full text-left p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-xs text-primary transition-all flex items-center justify-between group" type="button">
+<span class="truncate">“我们公司正在做 186 TRT 申请，底薪刚好 $72,000 会被拒吗？”</span>
+<span class="material-symbols-outlined text-sm text-secondary group-hover:translate-x-0.5 transition-transform shrink-0">chevron_right</span>
+</button>
+<button class="w-full text-left p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-xs text-primary transition-all flex items-center justify-between group" type="button">
+<span class="truncate">“兼职折算全职是否能豁免 $75,930 门槛？”</span>
+<span class="material-symbols-outlined text-sm text-secondary group-hover:translate-x-0.5 transition-transform shrink-0">chevron_right</span>
+</button>
+<button class="w-full text-left p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-xs text-primary transition-all flex items-center justify-between group" type="button">
+<span class="truncate">“新南威尔士州偏远地区 DAMA 当前特许额度是多少？”</span>
+<span class="material-symbols-outlined text-sm text-secondary group-hover:translate-x-0.5 transition-transform shrink-0">chevron_right</span>
+</button>
+</div>
+<!-- Deep Simulation CTA -->
+<a class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-primary text-on-primary text-xs font-label font-semibold shadow hover:shadow-md hover:bg-primary-container transition-all" href="#">
+<span class="material-symbols-outlined text-base">input</span>
+<span class="">带入此法条至 AI Workspace 深度研判</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Responsible Legal Counsel -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<span class="text-[11px] font-label font-bold uppercase tracking-wider text-secondary">专案负责执业律师</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-800 text-[10px] font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>今日可预约
+          </span>
+</div>
+<div class="flex items-center gap-4 mb-4">
+<img alt="Julian Chen Lawyer" class="w-14 h-14 rounded-full object-cover shadow-sm ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFIchWhyDSaMZSTR6JzpPgd75L7FL7qQEC9eTjMsaUQsGo0II4g5SWW-4Kz6Mt6VGLT442ojN4Y5Lun3OdaVbLEKntZ4VDmkWWvJ8p3gzPlLhXwyU6v5_jvkR0O75GWpCmq3aoeUYaXv_cSVXK51pu4cmKZ-tknk2FsCy-DEHA9JYYrGREKX-EVz2g2DwU4ilEbXaDIYTYK7s1RmhGkPry6ATAqUIx_L2cXTglnY_qCNTwvh3VAGNY_Q">
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="text-sm font-headline font-bold text-primary truncate">Julian Chen</h3>
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+</div>
+<p class="text-xs text-secondary font-medium">新南威尔士州最高法院执业大律师</p>
+<p class="text-[11px] text-outline font-mono">MARN 1489201 · 15年经验</p>
+</div>
+</div>
+<p class="text-xs text-secondary leading-relaxed mb-4 bg-surface-container-low p-3 rounded-lg font-body">
+          “针对本轮 TSMIT 涨幅，我们已为超过 40 家跨国在澳分支机构重构了雇员劳资协议及内政部合规申报书。”
+        </p>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-label text-xs font-semibold text-center transition-colors" type="button">
+            查看既往胜诉案例
+          </button>
+<button class="py-2.5 px-3 rounded-xl bg-primary text-on-primary font-label text-xs font-semibold text-center hover:bg-primary-container transition-colors" type="button">
+            立即连线咨询
+          </button>
+</div>
+</div>
+<!-- Card 3: Regulatory Timeline & Historical Changes -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xs font-headline font-bold text-primary tracking-tight">法规历史变迁与配套文件</h3>
+<span class="material-symbols-outlined text-secondary text-base">history</span>
+</div>
+<div class="relative pl-5 space-y-4 before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Step 1 (Current) -->
+<div class="relative">
+<span class="absolute -left-5 top-1 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-bold text-primary">LIN 26/084 (当前生效)</span>
+<span class="text-[11px] text-secondary">2026年7月1日 · 基准上调至 $75,930</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<span class="absolute -left-5 top-1 w-2.5 h-2.5 rounded-full bg-outline-variant ring-4 ring-surface-container-lowest"></span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-medium text-secondary">LIN 23/029</span>
+<span class="text-[11px] text-outline">2023年7月1日 · 历史性提升至 $70,000</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<span class="absolute -left-5 top-1 w-2.5 h-2.5 rounded-full bg-outline-variant ring-4 ring-surface-container-lowest"></span>
+<div class="flex flex-col">
+<span class="text-xs font-mono font-medium text-secondary">IMMI 13/028 (已废止)</span>
+<span class="text-[11px] text-outline">2013-2023年 · 冻结十年于 $53,900</span>
+</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t-0 space-y-2">
+<div class="text-[11px] font-label font-bold text-secondary uppercase tracking-wider">关联法案库检索</div>
+<a class="flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors py-1" href="#">
+<span class="truncate">《1958 年联邦移民法》(Migration Act)</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors py-1" href="#">
+<span class="truncate">《1994 年移民条例修正案第 4 号分册》</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+<a class="flex items-center justify-between text-xs text-secondary hover:text-primary transition-colors py-1" href="#">
+<span class="truncate">Fair Work Ombudsman - 年度现代劳资裁定书</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</aside>
+</div>
+<!-- Bottom Global Disclaimer -->
+<footer class="mt-12 mb-6 p-6 rounded-2xl bg-surface-container-low text-center">
+<p class="text-xs text-secondary leading-relaxed max-w-4xl mx-auto">
+<strong>法定免责声明 (Legal Disclaimer)：</strong>本法条分析与 AI 智能摘要内容由 Sovereign Nexus 法律智能系统生成并经执业律师校验，仅供一般性法律合规研析参考，并不构成个案的正式法律意见（Legal Advice）。由于个案事实、签证历史及公司财务状况各异，客户在签署任何具有约束力的法律合同前，请直接与本所持牌律师团队取得联系，进行正式的委聘与案件深度评估。
+    </p>
+<div class="mt-3 flex items-center justify-center gap-4 text-[11px] text-outline font-mono">
+<span class="">SOVEREIGN NEXUS LAW GROUP · SYDNEY CBD</span>
+<span class="">•</span>
+<span class="">ACN: 681 992 014</span>
+<span class="">•</span>
+<span class="">NSW LAW SOCIETY REGISTERED</span>
+</div>
+</footer>
+</div>
+<script>
+  // Simple micro-interaction for Language Toggle
+  document.getElementById('lang-dual')?.addEventListener('click', function() {
+    this.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+    this.classList.remove('text-secondary');
+    const enBtn = document.getElementById('lang-en');
+    enBtn?.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+    enBtn?.classList.add('text-secondary');
+  });
+
+  document.getElementById('lang-en')?.addEventListener('click', function() {
+    this.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+    this.classList.remove('text-secondary');
+    const dualBtn = document.getElementById('lang-dual');
+    dualBtn?.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-semibold');
+    dualBtn?.classList.add('text-secondary');
+  });
+</script></main></div>
+
+</body></html>

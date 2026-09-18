@@ -1,0 +1,379 @@
+<!DOCTYPE html><html lang="zh-CN" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sovereign Nexus - 智能法律中枢 · 悉尼</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #f1f4f9;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #d1d5db;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#001736",
+            "sidebar-bg": "#091a30",
+            "sidebar-hover": "#132847",
+            "sidebar-active": "#162d50",
+            "accent-blue": "#1a56db",
+            "bubble-user": "#eef4fe",
+            "chat-bg": "#f9fafb",
+            "surface-workspace": "#f1f4f9"
+          },
+          fontFamily: {
+            headline: ["Manrope", "sans-serif"],
+            body: ["Inter", "Noto Sans SC", "sans-serif"],
+            label: ["Inter", "Noto Sans SC", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-body text-[#191c1d] bg-[#f1f4f9] min-h-screen flex flex-col antialiased">
+<!-- ==================== TOP NAVIGATION / HEADER ==================== -->
+<header class="sticky top-0 z-50 w-full h-14 bg-white border-b border-gray-200/80 px-6 flex items-center justify-between shadow-[0_1px_3px_rgba(0,0,0,0.02)]">
+<!-- Brand & Terminal Info -->
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-2.5 text-primary hover:opacity-90 transition-opacity" href="#">
+<div class="w-7 h-7 rounded-lg bg-[#001736] flex items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-base">public</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-sm font-headline font-extrabold tracking-tight text-primary">SOVEREIGN NEXUS</span>
+<span class="text-xs font-medium text-gray-500">律界智能 · 悉尼</span>
+</div>
+</a>
+<div class="h-3.5 w-px bg-gray-200 hidden sm:block"></div>
+<div class="hidden sm:flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-[11px] font-medium tracking-wide text-gray-500 uppercase">Barangaroo Sydney Cloud Terminal</span>
+</div>
+</div>
+<!-- Right Controls -->
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-1.5 text-xs text-gray-600 hover:text-primary transition-colors py-1 px-2.5 rounded-md hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span class="">返回首页</span>
+</a>
+<div class="h-3.5 w-px bg-gray-200"></div>
+<div class="flex items-center text-xs font-medium text-gray-500">
+<button class="text-primary font-semibold hover:underline">中文</button>
+<span class="mx-1.5 text-gray-300">|</span>
+<button class="hover:text-primary transition-colors">EN</button>
+</div>
+<div class="w-7 h-7 rounded-full bg-gray-200 overflow-hidden ring-1 ring-gray-300 flex items-center justify-center text-gray-600 text-xs font-bold">
+        M
+      </div>
+</div>
+</header>
+<!-- ==================== MAIN WORKSPACE (1:1 with IMAGE_16) ==================== -->
+<main class="flex-1 w-full max-w-[1600px] mx-auto p-4 sm:p-5 flex">
+<div class="w-full min-h-[860px] bg-white rounded-2xl shadow-sm border border-gray-200/90 overflow-hidden flex flex-col md:flex-row">
+<!-- ==================== 1. LEFT SIDEBAR (Dark Navy #091a30) ==================== -->
+<aside class="w-full md:w-[260px] bg-[#091a30] text-white flex flex-col justify-between shrink-0 p-4 border-r border-[#0e223f]">
+<!-- Top Section -->
+<div class="flex flex-col">
+<!-- Logo & Title -->
+<div class="flex items-center gap-3 px-1 py-2 mb-4">
+<div class="w-9 h-9 rounded-lg bg-[#162d50] flex items-center justify-center font-headline font-extrabold text-sm tracking-wider text-white border border-white/10 shadow-inner">
+              L
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline font-bold text-sm tracking-wide text-white">LAW AI</span>
+</div>
+<span class="text-[11px] text-gray-400">专业的法律智能伙伴</span>
+</div>
+</div>
+<!-- + 新咨询 Action Button -->
+<button class="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-[#1a56db] hover:bg-[#1546b8] text-white text-sm font-semibold tracking-wide transition-all shadow-md active:scale-[0.99] mb-4" type="button">
+<span class="material-symbols-outlined text-lg">add</span>
+<span class="">新咨询</span>
+</button>
+<!-- Nav Items -->
+<nav class="flex flex-col gap-1 mb-6 text-xs">
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg bg-[#162d50] text-white font-medium" href="#">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-lg text-blue-300">forum</span>
+<span class="">我的咨询</span>
+</div>
+<span class="px-2 py-0.5 text-[10px] rounded-full bg-white/15 text-white font-mono">8</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-colors font-medium" href="#">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-lg text-gray-400">calendar_month</span>
+<span class="">预约</span>
+</div>
+<span class="text-[10px] text-gray-400 uppercase font-mono">Sydney</span>
+</a>
+</nav>
+<!-- "最近咨询" Section -->
+<div class="flex flex-col">
+<div class="text-[11px] font-medium text-gray-400 px-3 py-1 mb-1">最近咨询</div>
+<div class="flex flex-col gap-1 text-xs">
+<!-- Active Item -->
+<a class="flex items-center justify-between px-3 py-2.5 rounded-lg bg-[#162d50] text-white font-medium group" href="#">
+<span class="truncate">学生签证咨询</span>
+<span class="text-[10px] text-blue-200/80 font-normal shrink-0">今天</span>
+</a>
+<!-- Normal Items -->
+<a class="flex items-center justify-between px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-colors group" href="#">
+<span class="truncate">Daniel<br><br></span>
+<span class="text-[10px] text-gray-400 font-normal shrink-0">昨天</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-colors group" href="#">
+<span class="truncate">Daniel-xxx</span>
+<span class="text-[10px] text-gray-400 font-normal shrink-0">8-29</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-colors group" href="#">
+<span class="truncate">jack</span>
+<span class="text-[10px] text-gray-400 font-normal shrink-0">8-24</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Bottom User Profile Card -->
+<div class="pt-4 border-t border-white/10 mt-6 flex items-center justify-between px-1">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-[#162d50] border border-white/20 text-white font-headline font-bold text-xs flex items-center justify-center">
+              M
+            </div>
+<div class="flex flex-col">
+<span class="text-xs font-semibold text-white leading-snug">Mingyu</span>
+<span class="text-[11px] text-gray-400">账户设置</span>
+</div>
+</div>
+<button class="text-gray-400 hover:text-white transition-colors p-1" title="设置" type="button">
+<span class="material-symbols-outlined text-base">settings</span>
+</button>
+</div>
+</aside>
+<!-- ==================== 2. CENTER SECTION: CHAT WORKSPACE (White bg) ==================== -->
+<section class="flex-1 flex flex-col min-w-0 bg-white border-r border-gray-200">
+<!-- Header: 法律助手 & 付费咨询律师 -->
+<div class="h-16 px-8 flex items-center justify-between border-b border-gray-100 shrink-0">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h1 class="font-headline font-extrabold text-lg text-gray-900 leading-tight">法律助手</h1>
+<span class="text-xs text-gray-400 font-medium">AI Agent</span>
+</div>
+<span class="text-xs text-gray-500">学生签证咨询</span>
+</div>
+<button class="px-3.5 py-1.5 rounded-lg border border-gray-300 text-xs font-semibold text-gray-700 hover:text-primary hover:border-gray-400 hover:bg-gray-50 transition-all flex items-center gap-1" type="button">
+<span class="">付费咨询律师</span>
+<span class="text-sm leading-none font-normal">→</span>
+</button>
+</div>
+<!-- Chat messages stream (Scrollable) -->
+<div class="flex-1 overflow-y-auto px-8 py-6 flex flex-col gap-6">
+<!-- User message (Right-aligned, #eef4fe) -->
+<div class="flex flex-col items-end gap-1.5 self-end max-w-xl">
+<div class="bg-[#eef4fe] text-gray-900 px-4 py-3 rounded-2xl text-xs sm:text-[13px] leading-relaxed shadow-sm">
+              我的学生签证被拒了。我能等材料都准备好了再申请复审吗？现在还能不能留在澳洲？
+            </div>
+<span class="text-[11px] text-gray-400 font-normal pr-1">今天 10:24</span>
+</div>
+<!-- AI Agent Response (Left-aligned, LAW badge) -->
+<div class="flex items-start gap-3 max-w-2xl">
+<div class="w-8 h-8 rounded-lg bg-[#091a30] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<span class="text-[10px] font-black font-headline tracking-tighter">LAW</span>
+</div>
+<div class="flex flex-col gap-1.5 flex-1">
+<div class="flex items-center gap-2 text-xs">
+<span class="font-bold text-gray-900">法律助手</span>
+<span class="text-[11px] text-gray-400">10:25</span>
+</div>
+<!-- Clean Answer Bubble -->
+<div class="bg-white border border-gray-100 shadow-[0_2px_12px_rgba(0,0,0,0.03)] rounded-2xl rounded-tl-sm p-4 sm:p-5 flex flex-col gap-3.5 text-xs sm:text-[13px] text-gray-800 leading-relaxed">
+<p class="font-bold text-gray-900 text-sm sm:text-[14px]">
+                  先区分复审期限和当前签证状态。
+                </p>
+<!-- Point 1 -->
+<div>
+<h4 class="font-semibold text-gray-900 mb-1">1. 不要因为准备材料而错过复审期限</h4>
+<p class="text-gray-600">
+                    移民决定的复审有严格申请期限，应核对决定信所列期限。你能否申请复审，也要结合该决定的复审权利说明判断。
+                    <a class="text-accent-blue hover:underline font-mono text-xs ml-0.5" href="#art-cite">[1]</a>
+</p>
+</div>
+<!-- Point 2 -->
+<div>
+<h4 class="font-semibold text-gray-900 mb-1">2. 能否继续停留，要看到当前生效的签证</h4>
+<p class="text-gray-600">
+                    VEVO 可查看当前签证、停留期限和条件。不能仅凭“学生签证被拒”这一点，就判断你现在是否仍有合法停留资格。
+                    <a class="text-accent-blue hover:underline font-mono text-xs ml-0.5" href="#vevo-cite">[2]</a>
+</p>
+</div>
+<!-- Point 3 -->
+<div>
+<h4 class="font-semibold text-gray-900 mb-1">建议下一步</h4>
+<p class="text-gray-600">
+                    先核对决定信中的复审说明，再查看 VEVO。补充这些信息后，我可以结合你的情况继续分析。
+                  </p>
+</div>
+<!-- Citations -->
+<div class="flex items-center gap-3 pt-2 text-xs text-accent-blue">
+<a class="hover:underline flex items-center gap-0.5" href="#">
+<span class="">[1]</span>
+<span class="">ART 复审说明</span>
+</a>
+<a class="hover:underline flex items-center gap-0.5" href="#">
+<span class="">[2]</span>
+<span class="">Home Affairs · VEVO</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- User follow-up message (Right-aligned) -->
+<div class="flex flex-col items-end gap-1.5 self-end max-w-xl">
+<div class="bg-[#eef4fe] text-gray-900 px-4 py-3 rounded-2xl text-xs sm:text-[13px] leading-relaxed shadow-sm">
+              明白，先把目前的回答和分析整理成案件摘要。
+            </div>
+<span class="text-[11px] text-gray-400 font-normal pr-1">今天 10:28</span>
+</div>
+<!-- AI Agent Follow-up response (Left-aligned) -->
+<div class="flex items-start gap-3 max-w-2xl">
+<div class="w-8 h-8 rounded-lg bg-[#091a30] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<span class="text-[10px] font-black font-headline tracking-tighter">LAW</span>
+</div>
+<div class="flex flex-col gap-2 flex-1">
+<div class="flex items-center gap-2 text-xs">
+<span class="font-bold text-gray-900">法律助手</span>
+<span class="text-[11px] text-gray-400">10:28</span>
+</div>
+<div class="bg-gray-50 border border-gray-100 rounded-2xl rounded-tl-sm px-4 py-3 text-xs sm:text-[13px] text-gray-800 leading-relaxed max-w-xl">
+                可以。摘要会包括咨询结论、分析依据、下一步和待确认信息。
+              </div>
+<!-- Prominent PDF Button (as shown in IMAGE_16) -->
+<div class="flex items-center gap-3 mt-1">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-gray-300 bg-white hover:bg-gray-50 text-gray-800 text-xs font-semibold shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-base text-gray-600">description</span>
+<span class="">生成案件摘要 PDF</span>
+</button>
+<span class="text-xs text-gray-400">无需开通律师咨询即可生成</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Chat Input Bar -->
+<div class="p-6 pt-2 bg-white flex flex-col gap-2">
+<div class="flex items-center gap-2 border border-gray-300 rounded-xl px-3 py-2 bg-white focus-within:border-gray-400 focus-within:ring-1 focus-within:ring-gray-300 transition-all">
+<button class="text-gray-400 hover:text-gray-600 p-1" title="上传附件" type="button">
+<span class="material-symbols-outlined text-xl">attach_file</span>
+</button>
+<input class="flex-1 border-0 outline-none text-xs sm:text-sm text-gray-900 placeholder:text-gray-400 py-1 bg-transparent focus:ring-0" placeholder="继续向法律助手提问..." type="text">
+<button class="text-gray-400 hover:text-gray-600 p-1" title="语音输入" type="button">
+
+</button>
+<button class="px-4 py-1.5 rounded-lg bg-[#001736] hover:bg-[#05244f] text-white text-xs font-semibold tracking-wide transition-colors" type="button">
+              发送
+            </button>
+</div>
+<div class="text-[11px] text-gray-400 pl-1">
+            当前与 AI Agent 对话
+          </div>
+</div>
+</section>
+<!-- ==================== 3. RIGHT SIDEBAR: CASE INFO PANEL (Width ~320px) ==================== -->
+<aside class="w-full md:w-[320px] bg-white p-6 flex flex-col gap-6 shrink-0 overflow-y-auto">
+<!-- Title -->
+<h2 class="font-headline font-bold text-base text-gray-900">案件信息</h2>
+<!-- Section 1: Known · 已知信息 (Unified list, no bulky separate cards) -->
+<div class="flex flex-col gap-3">
+<h3 class="text-xs font-bold text-gray-900">Known · 已知信息</h3>
+<div class="flex flex-col gap-2.5 text-xs">
+<div class="flex items-center justify-between">
+<span class="text-gray-800 font-medium">学生签证被拒</span>
+<span class="text-[11px] text-gray-400">来自你的描述</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-gray-800 font-medium">目前在悉尼</span>
+<span class="text-[11px] text-gray-400">你已确认</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-gray-800 font-medium">9 月 3 日收到通知</span>
+<span class="text-[11px] text-gray-400">来自你的描述</span>
+</div>
+</div>
+</div>
+<!-- Section 2: To confirm · 待确认 (Orange left bar/indicator) -->
+<div class="flex flex-col gap-2">
+<h3 class="text-xs font-bold text-gray-900">To confirm · 待确认</h3>
+<div class="pl-2.5 border-l-2 border-amber-500 flex flex-col gap-0.5">
+<div class="text-xs text-gray-800 font-medium">当前签证状态及复审期限</div>
+<div class="text-[11px] text-gray-400">在对话中补充或纠正</div>
+</div>
+</div>
+<!-- Section 3: 本次材料 -->
+<div class="flex flex-col gap-2.5">
+<h3 class="text-xs font-bold text-gray-900">本次材料</h3>
+<!-- PDF item card -->
+<div class="flex items-center justify-between py-1.5">
+<div class="flex items-center gap-2.5">
+<div class="w-6 h-6 rounded bg-red-600 text-white flex items-center justify-center font-bold text-[8px] uppercase tracking-tighter shrink-0">
+                PDF
+              </div>
+<div class="flex flex-col leading-tight">
+<span class="text-xs font-medium text-gray-800">Decision-letter.pdf</span>
+<span class="text-[10px] text-gray-400">未分享给律师</span>
+</div>
+</div>
+<button class="text-gray-400 hover:text-gray-600 p-1" title="更多选项" type="button">
+<span class="material-symbols-outlined text-sm">more_horiz</span>
+</button>
+</div>
+<!-- + 上传文件 button -->
+<button class="flex items-center gap-1 text-xs text-accent-blue hover:text-blue-700 font-medium py-1" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+<span class="">上传文件</span>
+</button>
+</div>
+<!-- Section 4: Accordions (法律依据 & 案件摘要) -->
+<div class="flex flex-col divide-y divide-gray-100 border-t border-gray-100 pt-1">
+<!-- Accordion 1 -->
+<button class="flex items-center justify-between py-3 text-xs text-gray-900 hover:text-primary transition-colors text-left group" type="button">
+<span class="font-bold">法律依据 (2)</span>
+<span class="material-symbols-outlined text-base text-gray-400 group-hover:text-gray-600">expand_more</span>
+</button>
+<!-- Accordion 2 -->
+<button class="flex items-center justify-between py-3 text-xs text-gray-900 hover:text-primary transition-colors text-left group" type="button">
+<div class="flex items-center gap-2">
+<span class="font-bold">案件摘要</span>
+<span class="text-[9px] font-mono font-bold bg-gray-100 text-gray-500 px-1.5 py-0.5 rounded">PDF</span>
+</div>
+<span class="material-symbols-outlined text-base text-gray-400 group-hover:text-gray-600">expand_more</span>
+</button>
+</div>
+</aside>
+</div>
+</main>
+
+
+</body></html>
